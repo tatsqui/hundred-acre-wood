@@ -11,7 +11,7 @@ Using the provided ruby script, add file paths that allow the script to access s
 
 ## Why Do I Need to Know This?
 
-As your projects grow and you begin to use external files, knowing how to write a correct file path is essential. Additionally, being able to write a full file path in one line will help you to use the command-line more efficiently.
+As your projects grow and you begin to use external files, knowing how to write a correct file path is essential. Additionally, being able to write a full file path in one line will help you to use the command-line more efficiently. This activity is themed after the world of Winnie the Pooh, but don't worry: you can complete this activity even without knowledge of the books or cartoons!
 
 ## Let's Do It!
 
