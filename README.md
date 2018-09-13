@@ -29,7 +29,7 @@ You have fallen into the Heffalump Trap. There are two folders in this project c
 
 ### Hidden Files and Folders
 
-Sometimes, there are files or folders that you want to include in a project that you don't necessarily want any old user to mess with. Since your application is running on someone else's computer though, you have limited means to deny your customers access.
+Sometimes, there are files or folders that you want to include in a project that you don't necessarily want any old user to mess with. Since your application is running on someone else's computer though, you have limited means to deny your users access.
 
 Enter hidden files and folders! In iOS, any file or folder whose name begins with a `.` is hidden when using the Finder app. They are visible to programs like Atom, but end users don't see them unless they go looking for them.
 
