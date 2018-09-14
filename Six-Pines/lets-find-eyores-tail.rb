@@ -1,25 +1,47 @@
-kanga_roo_address = ''
+require 'pry'
+kanga_roo_address = '' # Your changes here!
 piglet_address = ''
 rabbit_address = ''
 pooh_address = ''
 
-who_was_asked = [kanga_roo_address, piglet_address, rabbit_address, pooh_address]
+# Please do not change any code past this point!
 
-ask_map = who_was_asked.map do |address|
-   File.exist?(address)
+who_was_asked = { 'Kanga' => kanga_roo_address, 'Piglet' => piglet_address,
+                  'Rabbit' => rabbit_address, 'Winnie the Pooh' => pooh_address
+                }
+
+ask_map = who_was_asked.values.map do |address|
+  File.exist?(address)
 end
 
-who_was_asked.uniq!
+puts('Oh bother! It seems Eyore has misplaced his tail again.')
+puts('We should ask around and see if anyone has seen it.')
 
-who_was_asked.each do |addrs|
-  File.open(addrs, 'r').each do |line|
-    puts line
+i = 0
+who_was_asked.each do |person, address|
+  puts("Let's go ask #{person}!")
+  puts("#{person}'s address is #{address}") unless address.empty?
+
+  if ask_map[i]
+    File.open(address, 'r').each do |line|
+      puts line
+    end
+
+    puts('Sorry! I haven\'t seen Eyore\'s tail!')
+  else
+    puts("Hmm. Seems that we have the wrong address for #{person}.")
   end
-  sleep(2)
 
+  sleep(2)
+  i += 1
 end
 
-if(ask_map.all? true)
+unless who_was_asked.values.uniq.length == ask_map.length
+  puts('Hey rapscallion, it looks like you wrote down the same address twice!')
+  return 0
+end
+
+if ask_map.all? true
 
   puts"                       . - ~ -.  .- .     .\n        ...:::::::::::.....    `- :  `.  ; `.   ..\n .;i!!!!!!!!!!!!!!!!!!!!!!!!!!i::.     `.`   `. : `\n"
   puts"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!;.   `     `;  ;\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!;:..    `  :_. - .\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:.        ,~\n"
@@ -37,6 +59,3 @@ if(ask_map.all? true)
 
   puts"Nice work!"
 end
-
-
-#ask around in the hundred acre wood!
