@@ -42,7 +42,7 @@ You should see some output that looks like this:
 ```
 In order to finish the excercise, you will need to use the file paths that lead to each of the four characters listed in the output. Luckily for you, the names of the characters match the names of the files. Each of the paths start in the `Six-Pines` folder, and your path should be constructed accordingly. For example, in order to get to `kanga.txt`, you need to leave the folder you are in using `..`, and then you need to enter the directory called `Kanga-And-Roos-House`. Finally, you need to include the name of the file where the character "lives", in this case `kanga.txt`. The file path might look something like `../Kanga-And-Roos-House/kanga.txt`. Oh bother. I may have given away the first answer.
 
-You can use Atom or Finder to see the layout of the files and directories, but please don't move any of them. They like their homes and would rather stay there, you see.
+You can use VS Code or Finder to see the layout of the files and directories, but please don't move any of them. They like their homes and would rather stay there, you see.
 
 For each character whose `.txt` you navigate to, a new piece of ASCII art will be printed to the terminal. There are four unique characters, and once they have all been "found", a fifth character from Winnie the Pooh will be printed to the console, indicating that you have completed the assignment.
 
@@ -58,7 +58,7 @@ You have fallen into the Heffalump Trap. There are two folders in this project c
 
 Sometimes, there are files or folders that you want to include in a project that you don't necessarily want any old user to mess with. Since your application is running on someone else's computer though, you have limited means to deny your users access.
 
-Enter hidden files and folders! In iOS, any file or folder whose name begins with a `.` is hidden when using the Finder app. They are visible to programs like Atom, but end users don't see them unless they go looking for them. Users can still find them if they need to, but using hidden files and folders keeps people from changing them or moving them by accident.
+Enter hidden files and folders! In iOS, any file or folder whose name begins with a `.` is hidden when using the Finder app. They are visible to programs like VS Code, but end users don't see them unless they go looking for them. Users can still find them if they need to, but using hidden files and folders keeps people from changing them or moving them by accident.
 
 ### The Heck is ASCII
 
